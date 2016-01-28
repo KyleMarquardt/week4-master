@@ -32,7 +32,7 @@ function addItem() {
 // item the user wishes to remove.
 function deleteItem(event) {
   console.info(event);
-  $(event.target).remove();
+  // $(event.target).remove();
   //just deletes the delete word, not the parent. See line below
   $(event.target).parent().remove();
 }
