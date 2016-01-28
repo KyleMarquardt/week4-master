@@ -7,32 +7,58 @@
     <title>Sandbox</title>
     <script src="https://code.jquery.com/jquery-2.2.0.js" charset="utf-8"></script>
 
+  <!-- /*<style> use to define styling in your html </style>*/ -->
   </head>
   <body>
 
     <h1>Hello!</h1>
 
-    <script>
+    <script> <!-- need the script tag when you are starting to type in javascript-->
       // window.alert("Hello!");
+      // <!-- This command opens a window, an alert window, with the word "Hello",
+      // format object.function. This object is a predefined window.
+      // -->
 
       // $('body').append("<h1>Go U NU!</h1>");
+      // Body refers to body of the document, it is as if you added another
+      // h1 right under the h1. The dollar sign is the jQuery function. Quotation
+      // marks go around the tags because they want them be included in the code
+      // that is placed in the body, or wherever
       // $('body').css("background-color", "yellow");
 
-      // function changeColor() {
-      //   $('body').css("background-color", "yellow");
-      // }
+      function changeColor() {
+        $('body').css("background-color", "yellow");
+      }
+          // The above is the means of programming or defining a function. In this instance
+          // it's to change the color. But this code doesn't execute the function
+          // Can use the console to test commands on page. To run the code, use the name of the function
+          // type this: changeColor() ... you don't need anything in the parentheses
+          // it just means, "run the code that's in the parens" and the curly braces
+          // in the function definition defines the code to be run. Keep in mind that
+          // Javascript is very case sensitive
 
-      // console.log("Wazzzzup!");
-      // console.info("This is week 4.");
-      // console.error("This carbon dioxide filter won't fit!");
+      console.log("Wazzzzup!");
+      console.info("This is week 4.");
+      console.error("This carbon dioxide filter won't fit!");
+      // These all send text to display in the console, and it's good for talking
+      // to future developers. And these show the line of code that info, error, log, etc.
+      //
 
       // person1 = { name: "Cookie Monster", hobbies: "Eating cookies" }
       // person2 = { name: "Bill Gates", hobbies: "Travel and Philanthropy" }
       // people = [person1, person2]
+      // The above speaks directly to the homework. 2 objects, recognized by the
+      // curly braces. starts with key "name" and then value "hobbies". The last
+      // line creates an array between the two people
+      // console.log(people)
+      // above function spits out the array of objects
 
-      // window.prompt("Which do you choose: the red pill or the blue pill?");
-
+      username = window.prompt("Which do you choose: the red pill or the blue pill?");
+      // Can define the variable username
+      alert(username);
+      window.alert("You lose.")
       // $("h1").on("click", changeColor);
+      // when you click on the header h1, it executes the changeColor function
       // $("h1").on("mouseenter", changeColor);
     </script>
 
